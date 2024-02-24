@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    var a = (StronglyTypedViewDemo.Models.Employee)ViewData["Var1"];
+    var b = ViewBag.Var2;
+
+}
+
+<h1>ViewData Data</h1>
+
+<h3>@a.Id</h3>
+<h3>@a.Name</h3>
+<h3>@a.Age</h3>
+
+<h1>ViewBag Data</h1>
+
+<h3>@b.Id</h3>
+<h3>@b.Name</h3>
+<h3>@b.Age</h3>
